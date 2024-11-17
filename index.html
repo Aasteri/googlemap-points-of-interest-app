@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points of Interest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Points of Interest</h1>
+        <div class="filters"></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Distance</th>
+                        <th>Reviews</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="places-table">
+                    <tr>
+                        <td colspan="5" class="loading">Loading places...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTsooPQRBp7u6n96ljC9RcE_WkLO8mtqc&libraries=places,geometry"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
